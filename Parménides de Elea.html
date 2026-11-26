@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Parménides de Elea · El ser es</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4efe6;--fg:#2a2622;--mut:#6b6359;--ac:#8a5a2b;--card:#fffaf0;--line:#d9cfbe;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17150f;--fg:#ece4d4;--mut:#a89f8d;--ac:#d6a461;--card:#221f17;--line:#3a352a}}
+:root[data-theme="dark"]{--bg:#17150f;--fg:#ece4d4;--mut:#a89f8d;--ac:#d6a461;--card:#221f17;--line:#3a352a}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 60px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-size:1.2rem;line-height:1.65}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:1.2rem;justify-content:center;padding:.7rem 1rem;flex-wrap:wrap}
+header a{color:var(--fg);text-decoration:none;letter-spacing:.12em;text-transform:uppercase;font-size:.95rem;font-weight:600}
+header a:hover{color:var(--ac)}
+.hero{text-align:center;padding:4.5rem 1.2rem 3rem}
+.hero .grc{font-size:clamp(2.2rem,8vw,4.2rem);letter-spacing:.2em;color:var(--ac);margin:0}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);margin:.3rem 0;font-weight:700}
+.hero p{max-width:34rem;margin:.8rem auto 0;color:var(--mut);font-style:italic}
+main{max-width:46rem;margin:0 auto;padding:0 1.2rem 3rem}
+section{padding:2.2rem 0;border-top:1px solid var(--line)}
+h2{font-size:2rem;margin:0 0 1rem;color:var(--ac)}
+h3{font-size:1.3rem;margin:1.6rem 0 .3rem}
+.timeline{list-style:none;padding:0;margin:1rem 0;border-left:2px solid var(--ac)}
+.timeline li{padding:0 0 1rem 1.1rem;position:relative}
+.timeline li::before{content:"";position:absolute;left:-7px;top:.55rem;width:12px;height:12px;border-radius:50%;background:var(--ac)}
+.timeline b{color:var(--ac)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem;margin:1rem 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:1rem 1.1rem}
+.card h3{margin:0 0 .3rem;font-size:1.25rem}
+.card p{margin:0;font-size:1.05rem}
+blockquote{margin:1.5rem 0;padding:.4rem 1.2rem;border-left:3px solid var(--ac);font-style:italic;font-size:1.35rem}
+form{display:grid;gap:.7rem;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:1rem}
+input,textarea{font:inherit;font-size:1.05rem;padding:.55rem .7rem;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);width:100%}
+textarea{min-height:5.5rem;resize:vertical}
+.row{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.sw{display:flex;gap:.4rem}
+.sw label{cursor:pointer}
+.sw input{position:absolute;opacity:0;width:0;height:0}
+.sw span{display:block;width:26px;height:26px;border-radius:50%;border:2px solid transparent}
+.sw input:checked+span{border-color:var(--fg)}
+button{font:inherit;font-weight:700;background:var(--ac);color:var(--bg);border:0;border-radius:6px;padding:.55rem 1.2rem;cursor:pointer}
+button:hover{opacity:.88}
+.mural{display:grid;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));gap:1.1rem;margin-top:1.5rem}
+.note{padding:1rem 1rem .8rem;border-radius:3px;color:#2b2518;box-shadow:0 4px 10px rgba(0,0,0,.25);font-size:1.1rem;line-height:1.4;position:relative;word-wrap:break-word}
+.note:nth-child(3n+1){transform:rotate(-1.6deg)}
+.note:nth-child(3n+2){transform:rotate(1.2deg)}
+.note:nth-child(3n){transform:rotate(-.5deg)}
+.note small{display:block;margin-top:.6rem;font-size:.9rem;opacity:.75}
+.note .x{position:absolute;top:2px;right:6px;background:none;color:#2b2518;padding:0;font-size:1.2rem;opacity:.55}
+.empty{color:var(--mut);font-style:italic;text-align:center;margin-top:1.5rem}
+footer{text-align:center;color:var(--mut);padding:1.5rem 1rem 2.5rem;font-size:.95rem}
+</style>
+</head>
+<body>
+<header>
+<a href="#historia">Historia</a><a href="#filosofia">Filosofía</a><a href="#legado">Legado</a><a href="#mural">Mural</a>
+</header>
+
+<div class="hero">
+<p class="grc">ΠΑΡΜΕΝΙΔΗΣ</p>
+<h1>Parménides de Elea</h1>
+<p>«El ser es, y el no ser no es.» El filósofo que se atrevió a decir que el cambio es una ilusión.</p>
+</div>
+
+<main>
+<section id="historia">
+<h2>Historia</h2>
+<p>Parménides nació hacia el 515 a. C. en Elea, una colonia griega del sur de Italia (la Magna Grecia). De su vida sabemos poco y casi todo viene de fuentes tardías, pero la tradición lo muestra como un hombre respetado, de origen noble, y como legislador de su ciudad.</p>
+<ul class="timeline">
+<li><b>c. 515 a. C.</b> Nace en Elea, en la actual Campania, Italia.</li>
+<li><b>Juventud</b> Se le vincula con Jenófanes y con un círculo pitagórico, que influyeron en su manera de pensar.</li>
+<li><b>c. 450 a. C.</b> Según el diálogo <i>Parménides</i> de Platón, visita Atenas ya anciano junto a su discípulo Zenón y conoce a un joven Sócrates. Los historiadores dudan de que el encuentro ocurriera de verdad.</li>
+<li><b>Obra</b> Escribe un único poema, <i>Sobre la naturaleza</i>, en versos hexámetros. Se conserva en fragmentos citados por autores posteriores.</li>
+<li><b>Después de 450 a. C.</b> Muere en Elea. Su escuela, la eleática, sigue con Zenón y Meliso.</li>
+</ul>
+<h3>El poema</h3>
+<p>El poema comienza con un viaje: el poeta sube a un carro guiado por las hijas del Sol hasta las puertas del Día y la Noche, donde una diosa le revela dos caminos. Tiene tres partes: el <b>proemio</b>, la <b>Vía de la Verdad</b> y la <b>Vía de la Opinión</b>.</p>
+</section>
+
+<section id="filosofia">
+<h2>Filosofía</h2>
+<p>Parménides inaugura la ontología: la pregunta por lo que significa «ser». Su razonamiento es casi geométrico y parte de una idea sencilla: solo se puede pensar y decir lo que es.</p>
+<div class="cards">
+<div class="card"><h3>Los dos caminos</h3><p>Hay un camino que dice «es» y otro que dice «no es». El segundo es impensable, porque nadie puede conocer ni nombrar la nada.</p></div>
+<div class="card"><h3>Los atributos del ser</h3><p>Lo que es, no nace ni muere, es uno y continuo, inmóvil, completo y sin partes. El poema lo compara con una esfera perfecta.</p></div>
+<div class="card"><h3>Pensar y ser</h3><p>Pensar y ser son lo mismo: el pensamiento siempre es pensamiento de algo que es.</p></div>
+<div class="card"><h3>Razón contra sentidos</h3><p>Los sentidos nos muestran multiplicidad, cambio y movimiento. Para Parménides eso es mera opinión (<i>doxa</i>); la verdad (<i>alétheia</i>) solo la alcanza la razón.</p></div>
+</div>
+<blockquote>Lo mismo es pensar y ser.</blockquote>
+<h3>¿Por qué importa?</h3>
+<p>Si de la nada no sale nada, entonces nada puede empezar a ser ni dejar de ser. Parménides lleva el argumento hasta el final y concluye que el cambio es una apariencia. Es una conclusión extrema, pero obligó a todos los filósofos posteriores a explicar cómo es posible el movimiento sin contradicción.</p>
+</section>
+
+<section id="legado">
+<h2>Legado</h2>
+<div class="cards">
+<div class="card"><h3>Zenón y Meliso</h3><p>Defendieron su tesis con paradojas, como la de Aquiles y la tortuga.</p></div>
+<div class="card"><h3>Empédocles y los atomistas</h3><p>Aceptaron que nada nace de la nada y explicaron el cambio como mezcla de elementos o átomos.</p></div>
+<div class="card"><h3>Platón y Aristóteles</h3><p>Platón construyó su mundo de las Ideas inmutables pensando en el ser parmenídeo; Aristóteles respondió con la distinción entre potencia y acto.</p></div>
+</div>
+</section>
+
+<section id="mural">
+<h2>Mural de ideas</h2>
+<p>¿Es real el cambio? ¿Qué significa «ser»? ¿Hasta dónde confías en tus sentidos? Deja tu idea en el mural.</p>
+<form id="f">
+<input id="n" maxlength="40" placeholder="Tu nombre (opcional)">
+<textarea id="t" maxlength="280" placeholder="Escribe tu idea o reflexión…" required></textarea>
+<div class="row">
+<div class="sw" id="sw">
+<label><input type="radio" name="c" value="#f6e58d" checked><span style="background:#f6e58d"></span></label>
+<label><input type="radio" name="c" value="#bfe3b4"><span style="background:#bfe3b4"></span></label>
+<label><input type="radio" name="c" value="#f5b9b0"><span style="background:#f5b9b0"></span></label>
+<label><input type="radio" name="c" value="#b7d4f0"><span style="background:#b7d4f0"></span></label>
+</div>
+<button type="submit">Publicar en el mural</button>
+</div>
+</form>
+<div class="mural" id="m"></div>
+<p class="empty" id="e">El mural está vacío. ¡Sé la primera persona en dejar una idea!</p>
+</section>
+</main>
+
+<footer>Parménides de Elea, c. 515–450 a. C. · «Lo que es, es.»</footer>
+
+<script>
+var KEY="parmenides-mural",notes=[];
+try{notes=JSON.parse(localStorage.getItem(KEY)||"[]")}catch(e){notes=[]}
+if(!Array.isArray(notes))notes=[];
+var m=document.getElementById("m"),em=document.getElementById("e");
+function save(){try{localStorage.setItem(KEY,JSON.stringify(notes))}catch(e){}}
+function render(){
+  m.innerHTML="";
+  em.style.display=notes.length?"none":"block";
+  notes.forEach(function(o,i){
+    var d=document.createElement("div");d.className="note";d.style.background=o.c;
+    var x=document.createElement("button");x.className="x";x.textContent="×";x.title="Borrar";
+    x.onclick=function(){notes.splice(i,1);save();render()};
+    var p=document.createElement("div");p.textContent=o.t;
+    var s=document.createElement("small");s.textContent="— "+(o.n||"Anónimo")+" · "+o.d;
+    d.appendChild(x);d.appendChild(p);d.appendChild(s);m.appendChild(d);
+  });
+}
+document.getElementById("f").addEventListener("submit",function(ev){
+  ev.preventDefault();
+  var t=document.getElementById("t").value.trim();
+  if(!t)return;
+  var c=document.querySelector('input[name="c"]:checked').value;
+  notes.unshift({t:t,n:document.getElementById("n").value.trim(),c:c,d:new Date().toLocaleDateString("es")});
+  save();render();document.getElementById("t").value="";
+});
+render();
+</script>
+</body>
+</html>
